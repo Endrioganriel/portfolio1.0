@@ -58,7 +58,7 @@ header a {
   text-decoration: none;
 }
 
-header a:hover {
+header nav.menu-mobile a:hover {
   color: white;
   transform: scale(1.05);
   display: inline-block;
@@ -69,9 +69,64 @@ header nav ul {
   list-style-type: none;
 }
 
-header nav ul li {
+header nav.menu-mobile ul li {
   display: inline-block;
   padding: 0 40px;
+}
+
+/* estilo do menu mobile */
+.btn-abrir-menu i {
+  color: #e21203;
+  font-size: 40px;
+}
+.menu-mobile {
+  background: rgb(0, 0, 0);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+  width: 0%;
+  overflow: hidden;
+  transition: 0.4s;
+}
+.menu-mobile.openMenu {
+  width: 70%;
+}
+.menu-mobile.openMenu ~ .desfoque-menu {
+  display: block;
+}
+.menu-mobile .btn-fechar {
+  padding: 20px 5%;
+}
+.menu-mobile .btn-fechar i {
+  color: #e21203;
+  font-size: 30px;
+  cursor: pointer;
+}
+.menu-mobile nav ul {
+  text-align: right;
+}
+.menu-mobile nav ul li a {
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 20px 8%;
+  display: block;
+}
+.menu-mobile nav ul li a:hover {
+  background-color: #e21203;
+  color: #000;
+}
+.desfoque-menu {
+  background-color: #000000b7;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8888;
+  display: none;
 }
 
 /*ESTILO DO TOPO DO SITE*/
@@ -89,6 +144,7 @@ section.topo_site .flex {
   line-height: 40px;
   /* animation: words 20s infinite; */
 }
+
 .topo_site .txt-topo h1 span {
   color: #e21203;
   /* animation: cursor 0.8s infinite; */
@@ -394,9 +450,9 @@ footer .line-footer p i {
 footer .line-footer p a {
   color: white;
 }
-
-@media screen and(max-width: 1020px) {
-  /* classes gerais */
+/* @media */
+@media screen and (max-width: 1020px) {
+  /* gerais */
   .flex {
     flex-direction: column;
   }
@@ -404,10 +460,80 @@ footer .line-footer p a {
   .topo_site .flex {
     flex-direction: column-reverse;
   }
-
+  h2.titulo {
+    font-size: 30px;
+    line-height: 34px;
+  }
   /* cabeçalho */
-  menu-desktop,
+  .menu-desktop,
   .btn-contato {
     display: none;
+  }
+  /* topo do site */
+
+  section.topo_site .flex {
+    gap: 40px;
+  }
+
+  section.topo_site {
+    padding: 20px 8%;
+  }
+
+  .topo_site h1 {
+    font-size: 25px;
+    /* animation: words 20s infinite; */
+  }
+  .topo_site h1 span {
+    display: block;
+  }
+
+  .topo_site .txt-topo p {
+    padding: 10px 0;
+    font-size: 12px;
+  }
+
+  .topo_site .img-topo img {
+    width: 100%;
+    /* position: relative;
+    animation: flutuar_foto 2s ease-in-out infinite alternate; */
+  }
+  /*ESTILO DAS ESPECIALIDADES*/
+  section.especialidades {
+    padding: 40px 8%;
+  }
+  /*ESTILO SOBRE*/
+  section.sobre {
+    padding: 80px 8%;
+  }
+  .sobre .txt-sobre h2 {
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .btn-social {
+    text-align: center;
+  }
+
+  .img-sobre img {
+    width: 100%;
+  }
+
+  /*ESTILO DOS MEUS PROJETOS*/
+  section.projetos {
+    padding: 80px 8%;
+  }
+  .img-port {
+    width: 100%;
+    margin: 0 auto;
+  }
+  section.projetos .flex {
+    gap: 60px;
+  }
+
+  footer .flex {
+    flex-direction: column;
+  }
+  footer .line-footer {
+    text-align: center;
   }
 }

@@ -17,6 +17,8 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js" defer></script>
     <title>Endrio Gabriel</title>
   </head>
   <body>
@@ -42,6 +44,29 @@
             <button>Contato</button>
           </a>
         </div>
+
+        <div class="btn-abrir-menu" id="btn-menu-lateral-mobile">
+          <i class="bi bi-list"></i>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+          <div class="btn-fechar">
+            <i class="bi bi-x-lg"></i>
+          </div>
+
+          <nav>
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Especialidade</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Projetos</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- menu mobile -->
+
+        <div class="desfoque-menu" id="desfoque"></div>
       </div>
       <!--interface-->
     </header>
@@ -51,9 +76,12 @@
         <div class="interface">
           <div class="flex">
             <div class="txt-topo">
-              <h1 class="aparecer" >Oi, eu sou Gabriel | <span> </span></h1>
+              <h1 class="aparecer">Oi, eu sou Gabriel | <span> </span></h1>
               <p>
-                Com 23 anos, sou um apaixonado por tecnologia e desenvolvimento, onde cada pixel conta e cada linha de código é um novo desafio. Vamos transformar ideias em soluções brilhantes, um código de cada vez!
+                Com 23 anos, sou um apaixonado por tecnologia e desenvolvimento,
+                onde cada pixel conta e cada linha de código é um novo desafio.
+                Vamos transformar ideias em soluções brilhantes, um código de
+                cada vez!
               </p>
 
               <div ontouchstart="">
@@ -61,7 +89,6 @@
                   <a href="#">Start</a>
                 </div>
               </div>
-
             </div>
             <div class="img-topo">
               <img src="images/eu.png" alt="" />
@@ -133,9 +160,15 @@
                 ipsam sit ipsum tenetur tempore nesciunt? Quidem eligendi
               </p>
               <div class="btn-social">
-                <a href=""><button><i class="bi bi-whatsapp"></i></button></a>
-                <a href=""><button><i class="bi bi-linkedin"></i></button></i></a>
-                <a href=""><button><i class="bi bi-github"></i></button></i></a>
+                <a href=""
+                  ><button><i class="bi bi-whatsapp"></i></button
+                ></a>
+                <a href=""
+                  ><button><i class="bi bi-linkedin"></i></button
+                ></a>
+                <a href=""
+                  ><button><i class="bi bi-github"></i></button
+                ></a>
               </div>
             </div>
           </div>
@@ -144,60 +177,76 @@
       <!--SOBRE-->
 
       <section class="projetos">
-      <div class="interface">
-        <h2 class="titulo">Meus <span>Projetos.</span></h2>
-        <div class="flex">
-          <div class="img-port" style="background-image: url(images/aprenser.png);">
-            <div class="overlay">Projeto Onça</div>
-          </div>
-          <div class="img-port" style="background-image: url(images/aprenser.png);">
-            <div class="overlay">Projeto 2</div>
-          </div>
-          <div class="img-port" style="background-image: url(images/aprenser.png);">
-            <div class="overlay">Projeto 3</div>
+        <div class="interface">
+          <h2 class="titulo">Meus <span>Projetos.</span></h2>
+          <div class="flex">
+            <div
+              class="img-port"
+              style="background-image: url(images/aprenser.png)"
+            >
+              <div class="overlay">Projeto Onça</div>
+            </div>
+            <div
+              class="img-port"
+              style="background-image: url(images/aprenser.png)"
+            >
+              <div class="overlay">Projeto 2</div>
+            </div>
+            <div
+              class="img-port"
+              style="background-image: url(images/aprenser.png)"
+            >
+              <div class="overlay">Projeto 3</div>
+            </div>
           </div>
         </div>
-      </div>
       </section>
-       <!--PROJETOS-->
+      <!--PROJETOS-->
 
       <section class="formulario">
-<div class="interface">
-  <h2 class="titulo">Fala <span>comigo.</span></h2>
-  <form action="">
-    <input type="text" placeholder="Seu nome:" required>
-    <input type="text" placeholder="Seu email:">
-    <input type="text" placeholder="Seu telefone:">
-    <textarea name="" id="" placeholder="Sua mensagem"></textarea>
-    <div class="btn-enviar"><input type="submit" value="enviar"></div>
-  </form>
-</div>
+        <div class="interface">
+          <h2 class="titulo">Fala <span>comigo.</span></h2>
+          <form action="">
+            <input type="text" placeholder="Seu nome:" required />
+            <input type="text" placeholder="Seu email:" />
+            <input type="text" placeholder="Seu telefone:" />
+            <textarea name="" id="" placeholder="Sua mensagem"></textarea>
+            <div class="btn-enviar"><input type="submit" value="enviar" /></div>
+          </form>
+        </div>
       </section>
-       <!--Formulario-->
-
-
+      <!--Formulario-->
     </main>
 
     <footer>
       <div class="interface">
-      <div class="line-footer">
-            <div class="flex">
+        <div class="line-footer">
+          <div class="flex">
             <div class="logo-footer">
-              <img src="images/Gabriel.png" alt="logotipo">
+              <img src="images/Gabriel.png" alt="logotipo" />
             </div>
             <div class="btn-social">
-              <a href=""><button><i class="bi bi-whatsapp"></i></button></a>
-              <a href=""><button><i class="bi bi-linkedin"></i></button></i></a>
-              <a href=""><button><i class="bi bi-github"></i></button></i></a>
+              <a href=""
+                ><button><i class="bi bi-whatsapp"></i></button
+              ></a>
+              <a href=""
+                ><button><i class="bi bi-linkedin"></i></button
+              ></a>
+              <a href=""
+                ><button><i class="bi bi-github"></i></button
+              ></a>
             </div>
           </div>
-      </div>
-      <div class="line-footer borda">
-        <p><i class="bi bi-envelope-at-fill"></i> <a href="mailto:endrio_gabriel@hotmail.com">endrio_gabriel@hotmail.com</a> </p>
-      </div>
+        </div>
+        <div class="line-footer borda">
+          <p>
+            <i class="bi bi-envelope-at-fill"></i>
+            <a href="mailto:endrio_gabriel@hotmail.com"
+              >endrio_gabriel@hotmail.com</a
+            >
+          </p>
+        </div>
       </div>
     </footer>
-
-
   </body>
 </html>
