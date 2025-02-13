@@ -268,7 +268,9 @@ section.especialidades {
   padding: 40px 4%;
 }
 section.especialidades .flex {
-  gap: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 25px;
 }
 
 .especialidades .especialidades-box {
@@ -277,6 +279,9 @@ section.especialidades .flex {
   margin-top: 45px;
   border-radius: 30px;
   transition: 0.2s;
+  flex: 1 1 33%;
+  max-width: 33%;
+  margin-bottom: 35px;
 }
 .especialidades .especialidades-box:hover {
   transform: scale(1.05);
@@ -284,13 +289,17 @@ section.especialidades .flex {
 }
 
 .especialidades .especialidades-box i {
-  font-size: 70px;
-  color: #e21203;
+  font-size: 40px;
+  align-items: center;
+  margin-right: 10px;
 }
 
-.especialidades .especialidades-box h3 {
+.especialidades .especialidades-box p {
   font-size: 28px;
-  margin: 15px 0;
+  margin-bottom: 25px;
+  font-weight: bold;
+  padding-left: 10px;
+  border-left: 5px solid #e21203;
 }
 
 /*ESTILO SOBRE*/
